@@ -1,10 +1,15 @@
 var iconBase = 'img/google-marker.png';
 var myLatlng = new google.maps.LatLng(52.621454, 1.219074);
 
+function is_touch_device() {
+  return 'ontouchstart' in window // works on most browsers 
+    || 'onmsgesturechange' in window; // works on ie10
+};
+
 var mapContainer = document.getElementById('map');
 var mapOptions = {
   panControl: false,
-  draggable: true,
+  draggable: is_touch_device() ? false: true,
   zoomControl: false,
   scrollwheel: false,
   scaleControl: false,
