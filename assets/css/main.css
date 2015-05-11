@@ -586,3 +586,22 @@ border-radius: 5px;
    font-style: normal;
    color: #999;
   }
+
+.smaller {
+	width: 60%;
+}
+#register .btn {
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 50px;
+	background-color: #ffbf00;
+	color: #fff;
+	border: 0;
+}
+#register .btn:hover, #contact .btn:focus {
+	background-color: #e9af03;
+	outline: 0px;
+}
+#register_button_div{
+	text-align: center;
+}

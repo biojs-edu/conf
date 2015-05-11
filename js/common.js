@@ -15,7 +15,7 @@ var mapOptions = {
   scaleControl: false,
   center: myLatlng,
   mapTypeId: google.maps.MapTypeId.MAP,
-  zoom: 5
+  zoom: 7
 };
 
 var map = new google.maps.Map(mapContainer, mapOptions);
