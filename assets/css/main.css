@@ -22,6 +22,7 @@ body {
 	color: #a4003a;
 	text-shadow: none;
 }
+ */
 /*
  * A better looking default horizontal rule
  */
@@ -60,9 +61,9 @@ html, body {
 	height: 100%;
 }
 body {
-	font-family: "Lato";
+	font-family: "Open Sans";
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 18px;
 	color: #555;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
@@ -108,17 +109,17 @@ a img {
 	background: #f5f5f5;
 }
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Raleway";
+h2, h3, h4, h5, h6 {
+	font-family: "Open Sans";
 	font-weight: 200;
 	color: #333;
 }
 h2 {
-	font-size: 36px;
+	font-size: 80px;
 	color: #777;
 }
 h3 {
-	font-size: 26px;
+	font-size: 37px;
 }
 /* Paragraph & Typographic */
 p {
@@ -205,7 +206,7 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header_bg.jpg) no-repeat center top;
+	background: url(../img/header.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top: 120px;
 	text-align: center;
@@ -225,17 +226,18 @@ a:before, a:after {
 }
 #headerwrap h1 {
 	color: #ffffff;
-	font-size: 50px;
-	font-weight: 400;
+	font-size: 80px;
+	font-weight: bolder;
 	text-align: center;
 	letter-spacing: 3px;
 }
 #headerwrap p {
 	color: #fff;
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: 300;
 	text-align: center;
 	letter-spacing: 1px;
+	line-height: 40px;
 }
 #headerwrap .icon {
 	color: #ffffff;
@@ -604,4 +606,90 @@ border-radius: 5px;
 }
 #register_button_div{
 	text-align: center;
+}
+
+#programme {
+	background-color: #66C266;
+	color: #fff;
+	font-weight: 800;
+}
+#programme h2 {
+	color: #fff;
+}
+#programme h3 {
+	color: #fff;
+}
+#organisers {
+	background-color: #66C266;
+	color: #fff;
+}
+#organisers h2 {
+	color: #fff;
+}
+#organisers h3 {
+	color: #fff;
+}
+#keynote_speakers_header{
+	background: url(../img/keynote.jpg) no-repeat center top;
+	height: 300px;
+}
+#keynote_speakers_header h2{
+	color: #fff;
+}
+#keynote_speakers_header h3{
+	color: #fff;
+}
+#lightning_talks_header{
+	background: url(../img/lightning-talks.jpg) no-repeat center top;
+	height: 300px;
+}
+#lightning_talks_header h2{
+	color: #fff;
+}
+#lightning_talks_header h3{
+	color: #fff;
+}
+#hackathon_header{
+	background: url(../img/pizza.jpg) no-repeat center top;
+	height: 300px;
+}
+#hackathon_header h2{
+	color: #fff;
+}
+#hackathon_header h3{
+	color: #fff;
+}
+#industry_session_header{
+	background: url(../img/industry_Fotor.png) no-repeat center top;
+	background-size: cover;
+	height: 300px;
+}
+#industry_session_header h2{
+	color: #fff;
+}
+#industry_session_header h3{
+	color: #fff;
+}
+
+h1 span {
+	color: #282828;
+	font-size: 80px;
+}
+
+#register {
+	background-color: #66C266;
+	color: #fff;
+}
+#register h2 {
+	color: #fff;
+}
+#register h3 {
+	color: #fff;
+}
+.overlap {
+	background-color: #353535;
+	width: 20%;
+	height: 90px;
+	padding: 5px;
+	margin: 40px auto;
 }
