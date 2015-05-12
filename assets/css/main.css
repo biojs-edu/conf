@@ -206,7 +206,7 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: url(../img/header_Fotor.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top: 120px;
 	text-align: center;
@@ -225,14 +225,16 @@ a:before, a:after {
 	padding-bottom: 100px;
 }
 #headerwrap h1 {
-	color: #ffffff;
-	font-size: 80px;
+	color: #353535;
+	font-size: 100px;
 	font-weight: bolder;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
 	letter-spacing: 3px;
 }
 #headerwrap p {
-	color: #fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: #353535;
 	font-size: 30px;
 	font-weight: 300;
 	text-align: center;
@@ -609,16 +611,16 @@ border-radius: 5px;
 }
 
 #programme {
-	background-color: #66C266;
-	color: #fff;
+	background-color: #fff;
 	font-weight: 800;
 }
+/*
 #programme h2 {
 	color: #fff;
 }
 #programme h3 {
 	color: #fff;
-}
+}*/
 #organisers {
 	background-color: #66C266;
 	color: #fff;
@@ -688,7 +690,7 @@ h1 span {
 }
 .overlap {
 	background-color: #353535;
-	width: 20%;
+	width: 370px;
 	height: 90px;
 	padding: 5px;
 	margin: 40px auto;
