@@ -708,3 +708,16 @@ h1 span {
 	
 	border-top: 30px solid #fff;
 }
+
+#registerMenu {
+	margin-top: 10px;
+	background-color: #ffbf00;
+	border-radius: 5px;
+	height: 30px;
+}
+#registerMenu a {
+	line-height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #fff;
+}
