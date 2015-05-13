@@ -116,7 +116,7 @@ h2, h3, h4, h5, h6 {
 }
 h2 {
 	font-size: 80px;
-	color: #777;
+	color: #52A83F;
 }
 h3 {
 	font-size: 37px;
@@ -206,7 +206,7 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header_Fotor.jpg) no-repeat center top;
+	background: url(../img/biojs-header-darker.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top: 120px;
 	text-align: center;
@@ -225,16 +225,14 @@ a:before, a:after {
 	padding-bottom: 100px;
 }
 #headerwrap h1 {
-	color: #353535;
+	color: #fff;
 	font-size: 100px;
 	font-weight: bolder;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	text-align: center;
 	letter-spacing: 3px;
 }
 #headerwrap p {
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	color: #353535;
+	color: #fff;
 	font-size: 30px;
 	font-weight: 300;
 	text-align: center;
@@ -254,10 +252,8 @@ a:before, a:after {
 	font-weight: 500;
 	font-size: 20px;
 	margin: 10px 0;
-	background-color: #ffbf00;
+	background-color: #e6c613;
 	color: #fff;
-	text-shadow: 0 0 4px #bf9004;
-	box-shadow: -5px -5px 20px #3da8ae;
 	border: 0;
 }
 #headerwrap .btn:hover, #headerwrap .btn:focus {
@@ -539,57 +535,55 @@ body .header {
 }
 }
 
-#twitter {
-background: #f1f2f8;
-
-width: 553px; /* Up to you but remember to change the div width below as well if you change it */
-padding: 0 10px;
-
-overflow: hidden; /* clearfix */
-
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
--o-border-radius: 5px;
--ms-border-radius: 5px;
-border-radius: 5px;
+#latest-tweets {
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    padding: 5px 15px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-#twitter h5 {
- float: left; /* We'll make the heading sit on its own line next to the tweets */
- width: 120px; /* Might wanna change this depending on the text in the heading */
- margin: 0;
- padding: 6px 0; /* I'll set the top and bottom padding here rather than in the container so as not to cut off any text */
-
- font-size: 12px;
- color: #4b9fff;
- line-height: 1;
+/* Remove padding, margin, bullets and 
+   make sure it's only one line */
+#latest-tweets ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    float: left; /* This makes the ul the full width of the children */
 }
 
-/* The marquee plug-in turns a marquee element into a div */
-#twitter p,
-#twitter marquee, 
-#twitter div {
- float: right;
- width: 430px; /* Container width - heading width - 10px (for some right padding) */
- margin: 0;
- padding: 6px 0; /* Again we set the padding in here so as not to cut text */
- line-height: 1;
+/* Tweets on one line, separated */
+#latest-tweets ul li {
+    display: inline-block;
+    margin: 0 20px 0 0;
 }
 
- /* All the tweets will be links pointing to your page on twitter */
- #twitter marquee a, 
- #twitter div a {
-  margin: 0 10px 0 0;
-  color: #333;
-  text-decoration: none;
- }
+#latest-tweets ul li p {
+    margin: 0;
+}
 
-  /* The i is used to display the date of the tweet */
-  #twitter marquee a i, 
-  #twitter div a i {
-   font-style: normal;
-   color: #999;
-  }
+/* Hide some stuff we don't want */
+#latest-tweets ul li div.user, 
+#latest-tweets ul li p.timePosted, 
+#latest-tweets ul li p.interact {
+    display: none;
+}
+
+/* Scroll it (thanks: http://stackoverflow.com/questions/21233033/css3-marquee-effect) */
+#latest-tweets ul {
+    padding-left: 110%;  /* show the marquee just outside the paragraph */
+    -webkit-animation: marquee 30s linear infinite;
+}
+
+#latest-tweets ul:hover {
+    -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
 
 .smaller {
 	width: 60%;
