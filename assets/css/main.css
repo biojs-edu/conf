@@ -115,7 +115,7 @@ h2, h3, h4, h5, h6 {
 	color: #333;
 }
 h2 {
-	font-size: 80px;
+	font-size: 60px;
 	color: #52A83F;
 }
 h3 {
@@ -206,13 +206,13 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/biojs-header-darker.jpg) no-repeat center top;
+	background-color: #95c11d;
 	margin-top: -50px;
 	padding-top: 120px;
 	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	height: 550px;
 	width: 100%;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -225,19 +225,21 @@ a:before, a:after {
 	padding-bottom: 100px;
 }
 #headerwrap h1 {
-	color: #fff;
-	font-size: 100px;
-	font-weight: bolder;
-	text-align: center;
+	margin-top: 60px;
+	line-height: 60px;
+	color: #42861e;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: left;
 	letter-spacing: 3px;
 }
 #headerwrap p {
 	color: #fff;
-	font-size: 30px;
+	font-size: 27px;
 	font-weight: 300;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 1px;
-	line-height: 40px;
+	line-height: 33px;
 }
 #headerwrap .icon {
 	color: #ffffff;
@@ -249,12 +251,17 @@ a:before, a:after {
 	text-shadow: 0px 20px 7px #3da8ae;
 }
 #headerwrap .btn {
+	float: left;
 	font-weight: 500;
 	font-size: 20px;
 	margin: 10px 0;
-	background-color: #e6c613;
+	background-color: #42861e;
 	color: #fff;
 	border: 0;
+}
+#logo {
+	width: 350px;
+	height: 350px;
 }
 #headerwrap .btn:hover, #headerwrap .btn:focus {
 	background-color: #e9af03;
@@ -329,7 +336,7 @@ a:before, a:after {
 	font-weight: 500;
 	font-size: 18px;
 	margin-top: 50px;
-	background-color: #ffbf00;
+	background-color: #42861e;
 	color: #fff;
 	border: 0;
 }
@@ -438,11 +445,12 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	padding: 10px;
 	color: #fff;
 	background-color: #ffbf00;
 }
 .grid figcaption h5 {
+	line-height: 17px;
 	margin: 0;
 	padding-top: 0px;
 	padding-left: 20px;
@@ -535,56 +543,6 @@ body .header {
 }
 }
 
-#latest-tweets {
-    background: #fafafa;
-    border: 1px solid #eaeaea;
-    padding: 5px 15px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-/* Remove padding, margin, bullets and 
-   make sure it's only one line */
-#latest-tweets ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    white-space: nowrap;
-    float: left; /* This makes the ul the full width of the children */
-}
-
-/* Tweets on one line, separated */
-#latest-tweets ul li {
-    display: inline-block;
-    margin: 0 20px 0 0;
-}
-
-#latest-tweets ul li p {
-    margin: 0;
-}
-
-/* Hide some stuff we don't want */
-#latest-tweets ul li div.user, 
-#latest-tweets ul li p.timePosted, 
-#latest-tweets ul li p.interact {
-    display: none;
-}
-
-/* Scroll it (thanks: http://stackoverflow.com/questions/21233033/css3-marquee-effect) */
-#latest-tweets ul {
-    padding-left: 110%;  /* show the marquee just outside the paragraph */
-    -webkit-animation: marquee 30s linear infinite;
-}
-
-#latest-tweets ul:hover {
-    -webkit-animation-play-state: paused;
-}
-
-@-webkit-keyframes marquee {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
 .smaller {
 	width: 60%;
 }
@@ -592,7 +550,7 @@ body .header {
 	font-weight: 500;
 	font-size: 18px;
 	margin-top: 50px;
-	background-color: #ffbf00;
+	background-color: #42861e;
 	color: #fff;
 	border: 0;
 }
@@ -603,37 +561,17 @@ body .header {
 #register_button_div{
 	text-align: center;
 }
-
-#programme {
-	background-color: #fff;
-	font-weight: 800;
-}
-/*
-#programme h2 {
-	color: #fff;
-}
-#programme h3 {
-	color: #fff;
-}*/
-#organisers {
-	background-color: #57ac45;
-	color: #fff;
-}
-#organisers h2 {
-	color: #fff;
-}
-#organisers h3 {
-	color: #fff;
-}
-#keynote_speakers_header{
+#confirmed_speakers_header{
 	background: url(../img/keynote.jpg) no-repeat center top;
 	height: 300px;
 }
-#keynote_speakers_header h2{
+#confirmed_speakers_header h2{
 	color: #fff;
+	font-size: 80px;
 }
-#keynote_speakers_header h3{
+#confirmed_speakers_header h3{
 	color: #fff;
+	font-size: 40px;
 }
 #lightning_talks_header{
 	background: url(../img/lightning-talks.jpg) no-repeat center top;
@@ -641,9 +579,11 @@ body .header {
 }
 #lightning_talks_header h2{
 	color: #fff;
+	font-size: 80px;
 }
 #lightning_talks_header h3{
 	color: #fff;
+	font-size: 40px;
 }
 #hackathon_header{
 	background: url(../img/pizza.jpg) no-repeat center top;
@@ -651,9 +591,11 @@ body .header {
 }
 #hackathon_header h2{
 	color: #fff;
+	font-size: 80px;
 }
 #hackathon_header h3{
 	color: #fff;
+	font-size: 40px;
 }
 #industry_session_header{
 	background: url(../img/industry_Fotor.png) no-repeat center top;
@@ -662,26 +604,53 @@ body .header {
 }
 #industry_session_header h2{
 	color: #fff;
+	font-size: 80px;
 }
 #industry_session_header h3{
 	color: #fff;
+	font-size: 40px;
+}
+.div-green {
+	background-color: #95c11d;
+	color: #fff;
+}
+.div-green h2 {
+	color: #fff;
+}
+.div-green h3 {
+	color: #fff;
+}
+.div-dark-green {
+	background-color: #42861e;
+}
+.div-dark-green h2 {
+	color: #fff;
+}
+.div-dark-green h3 {
+	color: #fff;
+}
+.div-dark-green p {
+	color: #fff;
+}
+.div-white {
+	background-color: #fff;
+}
+.div-white h2 {
+	color: #42861e;
+}
+.div-white h3 {
+	color: #42861e;
+}
+.time {
+	background-color: #6B8E23;
+}
+.use {
+	background-color: #32CD32;
+}
+.presenters {
+	background-color: #42861e;
 }
 
-h1 span {
-	color: #282828;
-	font-size: 80px;
-}
-
-#register {
-	background-color: #57ac45;
-	color: #fff;
-}
-#register h2 {
-	color: #fff;
-}
-#register h3 {
-	color: #fff;
-}
 .overlap {
 	background-color: #353535;
 	width: 370px;
@@ -689,6 +658,15 @@ h1 span {
 	padding: 5px;
 	margin: 40px auto;
 }
+
+.attend-pic {
+	height: 100px;
+	width: 100px;
+	margin-left: auto;
+ 	margin-right: auto;
+  	display: block;
+}
+
 .arrow-down-green {
 	width: 0px; 
 	height: 0px;
@@ -696,7 +674,17 @@ h1 span {
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	
-	border-top: 30px solid #57ac45;
+	border-top: 30px solid #95c11d;
+}
+
+.arrow-down-dark-green {
+	width: 0px; 
+	height: 0px;
+	margin: 0px auto; 
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	
+	border-top: 30px solid #42861e;
 }
 
 .arrow-down-white {
@@ -711,7 +699,7 @@ h1 span {
 
 #registerMenu {
 	margin-top: 10px;
-	background-color: #ffbf00;
+	background-color: #42861e;
 	border-radius: 5px;
 	height: 30px;
 }
@@ -720,4 +708,8 @@ h1 span {
 	margin-left: 10px;
 	margin-right: 10px;
 	color: #fff;
+}
+.speaker {
+	height: 250px;
+	width: 250px;
 }
