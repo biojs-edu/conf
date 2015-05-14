@@ -447,7 +447,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	left: 0;
 	padding: 10px;
 	color: #fff;
-	background-color: #ffbf00;
+	background-color: #339999;
 }
 .grid figcaption h5 {
 	line-height: 17px;
@@ -550,7 +550,7 @@ body .header {
 	font-weight: 500;
 	font-size: 18px;
 	margin-top: 50px;
-	background-color: #42861e;
+	background-color: #b3d33b;
 	color: #fff;
 	border: 0;
 }
@@ -656,6 +656,10 @@ body .header {
 	background-color: #ACB8A5;
 }
 
+.presenters a {
+	color: #BB3D3D;
+}
+
 .overlap {
 	background-color: #353535;
 	width: 370px;
@@ -685,8 +689,7 @@ body .header {
 	height: 0px;
 	margin: 0px auto; 
 	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	
+	border-right: 30px solid transparent;	
 	border-top: 30px solid #00CC66;
 }
 
@@ -712,7 +715,7 @@ body .header {
 
 #registerMenu {
 	margin-top: 10px;
-	background-color: #42861e;
+	background-color: #b3d33b;
 	border-radius: 5px;
 	height: 30px;
 }
