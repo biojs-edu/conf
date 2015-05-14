@@ -460,15 +460,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	text-align: left;
 	letter-spacing: 1px;
 }
-.grid figcaption a {
-	text-align: left;
-	padding: 5px 10px;
-	margin-left: 20px;
-	display: inline-block;
-	background: #2f2f2f;
-	color: #fff;
-	font-size: 13px;
-}
+
 /* Caption Style */
 .mask figure {
 	overflow: hidden;
@@ -508,11 +500,8 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
 }
-.mask figcaption a {
-	position: absolute;
-	top: 10px;
-	bottom: 10px;
-	right: 30px;
+.speaker-link {
+	color: #555;
 }
 
 /* ==========================================================================
