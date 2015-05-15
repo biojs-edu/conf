@@ -63,7 +63,7 @@ $(document).ready(function(){
   var registerButton = document.getElementById('reg');
   registerButton.addEventListener('click', function(){
     ga('send', 'event', {
-        'eventCategory': 'MouseoverPicture',
+        'eventCategory': 'ClickedRegister',
         'eventAction': 'mouseover',
         'eventLabel': 'WentToTGACRegisterPage'
       });
