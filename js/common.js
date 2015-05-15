@@ -56,7 +56,7 @@ $(document).ready(function(){
       ga('send', 'event', {
         'eventCategory': 'MouseoverPicture',
         'eventAction': 'mouseover',
-        'eventLabel': 'LookedAtPictureOf ' + speakerName;
+        'eventLabel': 'LookedAtPictureOf ' + speakerName
       });
     });
   }
@@ -65,7 +65,7 @@ $(document).ready(function(){
     ga('send', 'event', {
         'eventCategory': 'MouseoverPicture',
         'eventAction': 'mouseover',
-        'eventLabel': 'WentToTGACRegisterPage';
+        'eventLabel': 'WentToTGACRegisterPage'
       });
   });
 });
