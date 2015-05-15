@@ -405,6 +405,9 @@ a:before, a:after {
 #footerwrap h4 {
 	color: white;
 }
+#castle {
+	width: 355px;
+}
 ul.social-buttons {
 	margin: 0;
 }
