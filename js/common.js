@@ -29,7 +29,6 @@ $(document).ready(function(){
 
   //google analytics event tracking
   var navbar = document.getElementsByClassName('smoothScroll');
-  console.log(navbar);
   for(var i=0; i<navbar.length; i++){
     var current = navbar[i];
     current.addEventListener('click', function(e) {  
@@ -40,4 +39,33 @@ $(document).ready(function(){
       });
     });
   }
+  var links = document.getElementsByClassName('link');
+  for(var i=0; i<links.length; i++){
+    links[i].addEventListener('click', function(e){
+      ga('send', 'event', {
+        'eventCategory': 'ClickOnLink',
+        'eventAction': 'click',
+        'eventLabel': 'ClickedOnLink ' + e.toElement.innerHTML
+      });
+    });
+  }
+  var speakers = document.getElementsByClassName('speaker');
+  for(var i=0; i<speakers.length; i++){
+    speakers[i].addEventListener('mouseover', function(e){
+      var speakerName = e.toElement.parentElement.children[1].innerText.split('\n')[0];
+      ga('send', 'event', {
+        'eventCategory': 'MouseoverPicture',
+        'eventAction': 'mouseover',
+        'eventLabel': 'LookedAtPictureOf ' + speakerName;
+      });
+    });
+  }
+  var registerButton = document.getElementById('reg');
+  registerButton.addEventListener('click', function(){
+    ga('send', 'event', {
+        'eventCategory': 'MouseoverPicture',
+        'eventAction': 'mouseover',
+        'eventLabel': 'WentToTGACRegisterPage';
+      });
+  });
 });
