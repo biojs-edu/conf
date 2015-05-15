@@ -612,6 +612,9 @@ body .header {
 .div-green h3 {
 	color: #fff;
 }
+.div-green a {
+	color: #555;
+}
 .div-blue {
 	background-color: #339999;
 	color: #fff;
