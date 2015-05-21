@@ -28,16 +28,27 @@
 }
 @media screen and (max-device-width : 320px)
 {
-  h1
+  #headerwrap h1
   {
     font-size: 25px;
   }
 }
 @media screen and (max-device-width : 1204px)
 {
-  h1
+  #headerwrap h1
   {
-    font-size: 35px;
+    font-size: 40px;
+  }
+}
+@media screen and (max-device-width : 1204px)
+{
+  .navbar-brand
+  {
+    float: left;
+  }
+  .navbar-toggle
+  {
+    float: left;
   }
 }
 #headerwrap p {
@@ -373,7 +384,7 @@ a:before, a:after {
 }
 @media screen and (max-device-width : 1204px)
 {
-  #hackathon_header h2
+  #hackathon_header  h2
   {
     font-size: 50px;
   }
@@ -462,6 +473,8 @@ body {
     color: #555;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+    width: auto;
+    margin: 0%;    
 }
 .col-md-4 {
     padding-bottom: 20px;
