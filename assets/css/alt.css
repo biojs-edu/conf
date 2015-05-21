@@ -51,6 +51,17 @@
     float: left;
   }
 }
+@media screen and (max-device-width : 320px)
+{
+  .navbar-brand
+  {
+    float: left;
+  }
+  .navbar-toggle
+  {
+    float: left;
+  }
+}
 #headerwrap p {
     color: #fff;
     font-size: 27px;
