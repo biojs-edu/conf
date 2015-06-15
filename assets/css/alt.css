@@ -502,3 +502,9 @@ body {
 #cambridgene {
     height: auto;
 }
+#deadline {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
